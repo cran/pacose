@@ -22,7 +22,7 @@ ipacose(x = x, pc = pc, method = "pacose.ridge", cutoff, gr=NULL, k = 2, cv.meth
 \item{sens}{when the true graph is known, the sensitivity of the estimated graph.}
 \item{ppv}{when the true graph is known, the PPV of the estimated graph.}
 }
-\references{Guillemot V., Boulesteix A.-L. (2012). Iterative reconstruction of high-dimensional Gaussian graphical models based on a new method to estimate partial correlations under constraints. Submitted.}
+\references{Guillemot V., Bender A., Boulesteix A.-L. (2012). Iterative reconstruction of high-dimensional Gaussian graphical models based on a new method to estimate partial correlations under constraints. Submitted.}
 \author{Vincent Guillemot}
 \examples{
 require(mvtnorm)

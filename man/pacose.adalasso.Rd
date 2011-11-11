@@ -8,12 +8,12 @@ pacose.adalasso(X, gg, k = 10, use.Gram = FALSE, both = TRUE, verbose = FALSE, c
 \arguments{
   \item{X}{a dataset (matrix) of dimensions n x p.}
   \item{gg}{the graph (an object of class \code{\link[igraph:igraph-package]{igraph}}) to integrate.}
-  \item{k}{integer, the number of folds to be used when selecting the optimal value among \code{Ncomp}.}
+  \item{k}{integer, the number of folds to be used when selecting the optimal value of the regularization parameter.}
   \item{use.Gram}{see \code{\link[parcor:adalasso]{adalasso}}}
   \item{both}{boolean, whether to compute both the adaptive LASSO and the non adaptive LASSO versions of the partial correlation matrix or not, default to TRUE.
 }
   \item{verbose}{boolean, whether to print out intermediate messages or not, default to FALSE.}
-  \item{cv.method}{equals "CV", for a cross validation determination of the regularization parameter.}
+  \item{cv.method}{equals "CV", for a cross validation determination of the regularization parameter. Alternative values are only used in function \code{\link{pacose.ridge}}.}
 }
 \value{
 list(pcor.lasso = pcor.lasso, pcor.adalasso = pcor.adalasso,
@@ -23,7 +23,7 @@ list(pcor.lasso = pcor.lasso, pcor.adalasso = pcor.adalasso,
 \item{pcor.adalasso}{an estimate of the p x p partial correlation matrix with the adaptive version of the method LASSO.}
 \item{invcov.adalasso }{an estimate of the p x p precision matrix with the adaptive version of the method LASSO.}
 }
-\references{Guillemot V., Boulesteix A.-L. (2012). Iterative reconstruction of high-dimensional Gaussian graphical models based on a new method to estimate partial correlations under constraints. Submitted.}
+\references{Guillemot V., Bender A., Boulesteix A.-L. (2012). Iterative reconstruction of high-dimensional Gaussian graphical models based on a new method to estimate partial correlations under constraints. Submitted.}
 \author{Vincent Guillemot}
 \seealso{\code{\link[parcor:adalasso.net]{adalasso.net}}, \code{\link{pacose.ridge}}, \code{\link{pacose.pls}}}
 \examples{

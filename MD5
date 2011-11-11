@@ -1,4 +1,4 @@
-7e22b4cb98192d9a4ceadfdd1f174368 *DESCRIPTION
+24dac7287c32e11123b764824cc7e0c0 *DESCRIPTION
 b8249d25cfa6e640b228eb4bb3fa9aed *NAMESPACE
 17f9b747265c0c588066492c7512a8af *R/Beta2parcor.R
 90b56884088c5725a12b62c33ba775f4 *R/INVEST_wrapper.R
@@ -19,7 +19,7 @@ d1d9b54de7b591fdbfe3a398f31e720e *R/oneK_SURE.R
 7b8cd35fd86d6a068c4b41f31f7e3b04 *R/oppdiag.R
 4278dc3040d5aaf3f3623ee44af0f93d *R/pacose.adalasso.R
 c1ddcb1d71b16cd73f91e60781f66dd9 *R/pacose.pls.R
-4474baaf519f66c2f6016ccff1872517 *R/pacose.ridge.R
+c549d312d0112ba60ca9c9a8468d133e *R/pacose.ridge.R
 9ec2ecc2c21ba24ba54904518ed90764 *R/pcor2invcov.R
 14e7b9d8a5b90622a73d127926113e50 *R/ridge.cv.R
 8663db4d01fee71edbd57d5f8c4c51ee *R/ridge.net.R
@@ -28,15 +28,15 @@ f06e124c1cc433da3ef66f734c192b86 *R/trk.R
 fbab77b12fc397388a6fc42e81e82e34 *R/zzz.R
 3efd3583bbc10336c110c60bf5add8b1 *man/INVEST_wrapper.Rd
 d47a1fb379831a5f6930d549136fad27 *man/invcov2pcor.Rd
-3f5439b138f73d9fe75f5fba90db9787 *man/ipacose.Rd
+b09f7026f62af9482024e28f083e21ec *man/ipacose.Rd
 5a9621ee3f939db53d9191ba17a089ad *man/isComplete.Rd
 a912010d8fa5dcc107ab11d5a0890b16 *man/isDecomposable.Rd
 4b62a6b04fa8128772274b6cc456c773 *man/omegaMVUE.Rd
 030d4dce25bdd62f02191132cea21645 *man/omegaSURE.Rd
 5775b1bf0b1e04db2f9592d47817dcea *man/pacose-internal.Rd
-70becbf388323c8e3398f3beb1cf2053 *man/pacose-package.Rd
-3c50e46bed900c396fafd92049efc3f3 *man/pacose.adalasso.Rd
-8ee07d734136eb0e36c94f292381c1c6 *man/pacose.pls.Rd
-e511ba7b75e6a4ac695ff7af593c58b3 *man/pacose.ridge.Rd
+a6dd4958eaadfe33161b3c3b247ec699 *man/pacose-package.Rd
+ac36bc10b7da2e3751235275fc940769 *man/pacose.adalasso.Rd
+b66b99c8ff980d0f834e804000be9662 *man/pacose.pls.Rd
+a272fa05eb2513ab584cb5750bea1de5 *man/pacose.ridge.Rd
 9ff6a372717632eada3c6563825e9bdb *man/pcor2invcov.Rd
 028488b16b0e875ef3bdb2621849ccd1 *src/wermuthC.c

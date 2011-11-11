@@ -1,5 +1,5 @@
 pacose.ridge <-
-function (X, gg, lambda = NULL, plot.it = FALSE, scale = FALSE, k = 10, verbose = FALSE, cv.method="CV") {
+function (X, gg, lambda = NULL, scale = FALSE, k = 10, verbose = FALSE, cv.method="CV") {
     if (is.null(lambda) == TRUE) {
         ss <- seq(-10, -1, length = 1000)
         ss <- 10^ss
@@ -29,7 +29,7 @@ function (X, gg, lambda = NULL, plot.it = FALSE, scale = FALSE, k = 10, verbose 
           Xi <- matrix(X[, noti],ncol=length(noti))
           Xi <- X[, noti]
           if (!is.null(dim(Xi))) {
-              if (cv.method == "CV" ) lambda.opt.i <- ridge.cv(Xi, yi, lambda = lambda, scale = scale, plot.it = plot.it, k = k)$lambda.opt
+              if (cv.method == "CV" ) lambda.opt.i <- ridge.cv(Xi, yi, lambda = lambda, scale = scale, plot.it = FALSE, k = k)$lambda.opt
               if (cv.method == "HKB") lambda.opt.i <- lm.ridge(yi~Xi, lambda = 0, scale = scale)$kHKB
               
               rr <- lm.ridge(yi ~ Xi, scale = scale, lambda = lambda.opt.i)

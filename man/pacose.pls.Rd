@@ -12,14 +12,14 @@ pacose.pls(X, gg, scale = TRUE, k = 10, Ncomp = NULL, verbose = FALSE, cv.method
   \item{k}{integer, the number of folds to be used when selecting the optimal value among \code{Ncomp}.}
   \item{Ncomp}{integer, the maximal number of PLS components to be used.}
   \item{verbose}{boolean, whether to print out intermediate messages or not, default to FALSE.}
-  \item{cv.method}{equals "CV", for a cross validation determination of the regularization parameter.}
+  \item{cv.method}{equals "CV", for a cross validation determination of the regularization parameter. Alternative values are only used in function \code{\link{pacose.ridge}}.}
 }
 \value{
 \item{pcor}{an estimate of the p x p partial correlation matrix.}
 \item{invcov }{an estimate of the p x p precision matrix.}
 \item{m }{vector containing all the optimal values for the regularization parameters.}
 }
-\references{Guillemot V., Boulesteix A.-L. (2012). Iterative reconstruction of high-dimensional Gaussian graphical models based on a new method to estimate partial correlations under constraints. Submitted.}
+\references{Guillemot V., Bender A., Boulesteix A.-L. (2012). Iterative reconstruction of high-dimensional Gaussian graphical models based on a new method to estimate partial correlations under constraints. Submitted.}
 \author{Vincent Guillemot}
 \seealso{\code{\link[parcor:pls.net]{pls.net}}, \code{\link{pacose.ridge}}, \code{\link{pacose.adalasso}}}
 \examples{

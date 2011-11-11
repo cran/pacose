@@ -3,13 +3,12 @@
 \title{The Ridge version of the PACOSE algorithm}
 \description{The function takes as an argument a dataset and a graph and returns an estimation of the partial correlation matrix.}
 \usage{
-pacose.ridge(X, gg, lambda = NULL, plot.it = FALSE, scale = FALSE, k = 10, verbose = FALSE, cv.method = "CV")
+pacose.ridge(X, gg, lambda = NULL, scale = FALSE, k = 10, verbose = FALSE, cv.method = "CV")
 }
 \arguments{
   \item{X}{a dataset (matrix) of dimensions n x p.}
   \item{gg}{the graph (an object of class \code{\link[igraph:igraph-package]{igraph}}) to integrate.}
   \item{lambda}{a set (vector) of values among which to choose when estimating the partial correlations.}
-  \item{plot.it}{boolean, whether to generate a graphical output or not, default to FALSE.}
   \item{scale}{boolean, whether to scale the data or not, default to FALSE.}
   \item{k}{integer, the number of folds to be used when selecting the optimal value among \code{lambda}.}
   \item{verbose}{boolean, whether to print out intermediate messages or not, default to FALSE.}
@@ -19,7 +18,7 @@ pacose.ridge(X, gg, lambda = NULL, plot.it = FALSE, scale = FALSE, k = 10, verbo
 \item{pcor}{an estimate of the p x p partial correlation matrix.}
 \item{invcov }{an estimate of the p x p precision matrix.}
 }
-\references{Guillemot V., Boulesteix A.-L. (2012). Iterative reconstruction of high-dimensional Gaussian graphical models based on a new method to estimate partial correlations under constraints. Submitted.}
+\references{Guillemot V., Bender A., Boulesteix A.-L. (2012). Iterative reconstruction of high-dimensional Gaussian graphical models based on a new method to estimate partial correlations under constraints. Submitted.}
 \author{Vincent Guillemot}
 \seealso{\code{\link[parcor:ridge.net]{ridge.net}}, \code{\link{pacose.pls}}, \code{\link{pacose.adalasso}}}
 \examples{

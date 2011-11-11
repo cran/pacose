@@ -4,7 +4,7 @@
 \title{ PACOSE and iPACOSE implementation plus several other covariance selection methods}
 \description{PACOSE is a method able to estimate a partial correlation matrix knowing a pattern of zeros. iPACOSE is an iterative application of PACOSE aiming at estimating a graph from a dataset.}
 \details{
-This R package contains the core functions presented by Guillemot and Boulesteix [1], along with some reference covariance selection methods that were not yet implemented in R. PACOSE is designed to estimate partial correlation matrices under constraints, and iPACOSE estimates a Gaussian graphical model [2] from a datases.
+This R package contains the core functions presented by Guillemot et al. [1], along with some reference covariance selection methods that were not yet implemented in R. PACOSE is designed to estimate partial correlation matrices under constraints, and iPACOSE estimates a Gaussian graphical model [2] from a dataset.
 
 The following covariance selection methods are implemented in this package along with PACOSE and iPACOSE:  \code{\link{omegaMVUE}}, \code{\link{omegaSURE}} [3], \code{\link{INVEST_wrapper}} [4].
 
@@ -15,10 +15,10 @@ iPACOSE is implemented in the function \code{\link{ipacose}}.
 Note that the functions mylars, adalasso and ridge.cv are exactly identical to the ones in package \code{\link[parcor:parcor-package]{parcor}} [5], they were included directly into the package to avoid a dependency that would interfere with the new function \code{\link{ridge.net}}. The latter is basically the same as the one in \code{\link[parcor:parcor-package]{parcor}}, except for the fact that the determination of the Ridge parameter can be done either analytically or with k-fold cross validation in this new function.
 }
 \author{
-Vincent Guillemot \url{vincent.guillemot@ibe.med.uni-muenchen.de}, Andreas Bender.
+Vincent Guillemot \url{vincent.guillemot@cea.fr}, Andreas Bender.
 }
 \references{
-[1] Guillemot V., Boulesteix A.-L. (2012). Iterative reconstruction of high-dimensional Gaussian graphical models based on a new method to estimate partial correlations under constraints. Submitted.
+[1] Guillemot V., Bender A., Boulesteix A.-L. (2012). Iterative reconstruction of high-dimensional Gaussian graphical models based on a new method to estimate partial correlations under constraints. Submitted.
 
 [2] Whittaker, J. (1990). Graphical models in applied multivariate statistics. Wiley.
 
@@ -33,5 +33,5 @@ Vincent Guillemot \url{vincent.guillemot@ibe.med.uni-muenchen.de}, Andreas Bende
 The functions presented in this package are strongly inspired from the functions in \code{\link[parcor:parcor-package]{parcor}}.}
 \examples{
 # For further examples on simulated and real datasets, see the associated 
-# article [Guillemot anb Boulesteix, 2012] and the companion website.
+# article [Guillemot et al., 2012] and the companion website.
 }
