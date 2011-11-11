@@ -22,7 +22,7 @@ omega <- matrix(c(1     , -0.477, 0.304, 0.478, -0.591, 0    ,
                -0.591, 0.382 , 0.181, 0.141, 1     , 0    ,
                0     , 0     , 0.242, 0    , 0     , 2    ),
              nrow = 6, ncol = 6)
-gr <- graph.adjacency((omega!=0),mode="undirected",diag=FALSE)
+gr <- simplify(graph.adjacency((omega!=0),mode="undirected",diag=FALSE))
 x <- rmvnorm(n=100,sigma=solve(omega))
 omega.hat <- omegaSURE(x,gr)
 

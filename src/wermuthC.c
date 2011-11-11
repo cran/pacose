@@ -1,7 +1,7 @@
 #include <R.h>
 #include <Rmath.h>
 
-void INVEST_wrapper(int *p, int *ninteract, double *delta, double *error, int *iter, int *maxiter,
+void wermuthC(int *p, int *ninteract, double *delta, double *error, int *iter, int *maxiter,
                     int ind[*ninteract][2], double icovx[*p][*p], double result[*p][*p])
 {
  double sii,sjj,sij,d,errortemp,coef ;

@@ -14,6 +14,7 @@
 \alias{ridge.net}
 \alias{tr}
 \alias{trk}
+\alias{wermuthC}
 \description{Internal PACOSE functions}
 \usage{
 Beta2parcor(Beta, verbose = FALSE)

@@ -1,8 +1,8 @@
 Package: pacose
 Type: Package
 Title: iPACOSE, PACOSE and other methods for covariance selection
-Version: 1.3
-Depends: ggm, igraph, ppls, MASS, gRbase, corpcor, glmnet, mvtnorm
+Version: 1.4
+Depends: ggm, igraph, ppls, MASS, corpcor, glmnet, mvtnorm, lcd
 Date: 2011-11-11
 Author: Vincent Guillemot, Andreas Bender
 Maintainer: GUILLEMOT Vincent <Vincent.GUILLEMOT@cea.fr>
@@ -12,6 +12,6 @@ Description: Implementation of iPACOSE, PACOSE and of various methods
         to zero.
 License: GPL
 LazyLoad: yes
-Packaged: 2012-09-04 07:52:16 UTC; vg213089
+Packaged: 2013-02-08 15:06:14 UTC; vg213089
 Repository: CRAN
-Date/Publication: 2012-09-04 08:48:56
+Date/Publication: 2013-02-08 16:34:44

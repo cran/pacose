@@ -1,10 +1,10 @@
 omegaSURE <-
 function(x,gr) {
-  if (!isDecomposable(igraph.to.graphNEL(gr))) {warning("Non decomposable graph");return(matrix(NaN,ncol(x),ncol(x)))}
-  struct <- rip(igraph.to.graphNEL(gr))
-  l1 <- lapply(struct$cliques,as.numeric)
-  l2 <- lapply(struct$separators,function(vec) ifelse(length(vec)==0,NA,as.numeric(vec)) )
-  l2 <- l2[!sapply(l2,function(xx) any(is.na(xx)))]
+  if (!(is.chordal(gr,fillin=TRUE)$chordal)) {warning("Non decomposable graph");return(matrix(NaN,ncol(x),ncol(x)))}
+  m <- get.adjacency(gr,sparse=F) ; colnames(m) <- rownames(m) <- 1:ncol(m)
+  jt <- ug.to.jtree(m)
+  l1 <- lapply(jt@cliques,function(u) as.numeric(u$vset))
+  l2 <- lapply(jt@separators,function(u) as.numeric(u$separator))
   p <- ncol(x)
   normD2 <- sum((Reduce("+",lapply(l1,oneK,x)) - Reduce("+",lapply(l2,oneK,x)))**2)
   num <-  -2*( sum(sapply(l1,trk,x)) - sum(sapply(l2,trk,x)) )
