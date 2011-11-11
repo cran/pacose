@@ -7,7 +7,7 @@ pacose.adalasso(X, gg, k = 10, use.Gram = FALSE, both = TRUE, verbose = FALSE, c
 }
 \arguments{
   \item{X}{a dataset (matrix) of dimensions n x p.}
-  \item{gg}{the graph (an object of class \code{\link[igraph:igraph-package]{igraph}}) to integrate.}
+  \item{gg}{the graph (an object of class \code{\link[igraph0:igraph-package]{igraph0}}) to integrate.}
   \item{k}{integer, the number of folds to be used when selecting the optimal value of the regularization parameter.}
   \item{use.Gram}{see \code{\link[parcor:adalasso]{adalasso}}}
   \item{both}{boolean, whether to compute both the adaptive LASSO and the non adaptive LASSO versions of the partial correlation matrix or not, default to TRUE.
@@ -28,7 +28,7 @@ list(pcor.lasso = pcor.lasso, pcor.adalasso = pcor.adalasso,
 \seealso{\code{\link[parcor:adalasso.net]{adalasso.net}}, \code{\link{pacose.ridge}}, \code{\link{pacose.pls}}}
 \examples{
 require(mvtnorm)
-require(igraph)
+require(igraph0)
 
 omega <- matrix(c(1     , -0.477, 0.304, 0.478, -0.591, 0    ,
                -0.477, 2     , 0.206, 0    , 0.382 , 0    ,

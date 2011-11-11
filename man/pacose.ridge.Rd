@@ -7,7 +7,7 @@ pacose.ridge(X, gg, lambda = NULL, scale = FALSE, k = 10, verbose = FALSE, cv.me
 }
 \arguments{
   \item{X}{a dataset (matrix) of dimensions n x p.}
-  \item{gg}{the graph (an object of class \code{\link[igraph:igraph-package]{igraph}}) to integrate.}
+  \item{gg}{the graph (an object of class \code{\link[igraph0:igraph-package]{igraph0}}) to integrate.}
   \item{lambda}{a set (vector) of values among which to choose when estimating the partial correlations.}
   \item{scale}{boolean, whether to scale the data or not, default to FALSE.}
   \item{k}{integer, the number of folds to be used when selecting the optimal value among \code{lambda}.}
@@ -23,7 +23,7 @@ pacose.ridge(X, gg, lambda = NULL, scale = FALSE, k = 10, verbose = FALSE, cv.me
 \seealso{\code{\link[parcor:ridge.net]{ridge.net}}, \code{\link{pacose.pls}}, \code{\link{pacose.adalasso}}}
 \examples{
 require(mvtnorm)
-require(igraph)
+require(igraph0)
 
 omega <- matrix(c(1     , -0.477, 0.304, 0.478, -0.591, 0    ,
                -0.477, 2     , 0.206, 0    , 0.382 , 0    ,

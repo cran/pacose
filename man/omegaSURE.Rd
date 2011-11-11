@@ -5,7 +5,7 @@
 \usage{omegaSURE(x, gr)}
 \arguments{
   \item{x}{matrix, the dataset}
-  \item{gr}{\code{\link[igraph:igraph-package]{igraph}} object representing the zeros in the inverse covariance matrix}
+  \item{gr}{\code{\link[igraph0:igraph-package]{igraph0}} object representing the zeros in the inverse covariance matrix}
 }
 \value{KhatSURE: the estimate of the precision matrix knowing a pattern of 0s.}
 \references{Wiesel, A., Eldar, Y. C., and Hero, A. O. (2010). Covariance estimation in decomposable gaussian graphical models. IEEE Transactions on Signal Processing, 58(3):1482--1492.}
@@ -13,7 +13,7 @@
 \seealso{\code{\link{omegaMVUE}}}
 \examples{
 require(mvtnorm)
-require(igraph)
+require(igraph0)
 
 omega <- matrix(c(1     , -0.477, 0.304, 0.478, -0.591, 0    ,
                -0.477, 2     , 0.206, 0    , 0.382 , 0    ,

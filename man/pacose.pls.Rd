@@ -7,7 +7,7 @@ pacose.pls(X, gg, scale = TRUE, k = 10, Ncomp = NULL, verbose = FALSE, cv.method
 }
 \arguments{
   \item{X}{a dataset (matrix) of dimensions n x p.}
-  \item{gg}{the graph (an object of class \code{\link[igraph:igraph-package]{igraph}}) to integrate.}
+  \item{gg}{the graph (an object of class \code{\link[igraph0:igraph-package]{igraph0}}) to integrate.}
   \item{scale}{boolean, whether to scale the data or not, default to FALSE.}
   \item{k}{integer, the number of folds to be used when selecting the optimal value among \code{Ncomp}.}
   \item{Ncomp}{integer, the maximal number of PLS components to be used.}
@@ -24,7 +24,7 @@ pacose.pls(X, gg, scale = TRUE, k = 10, Ncomp = NULL, verbose = FALSE, cv.method
 \seealso{\code{\link[parcor:pls.net]{pls.net}}, \code{\link{pacose.ridge}}, \code{\link{pacose.adalasso}}}
 \examples{
 require(mvtnorm)
-require(igraph)
+require(igraph0)
 
 omega <- matrix(c(1     , -0.477, 0.304, 0.478, -0.591, 0    ,
                -0.477, 2     , 0.206, 0    , 0.382 , 0    ,
