@@ -1,3 +1,2 @@
-tr <-
-function(mat) sum(diag(mat))
+tr <- function(mat) sum(diag(mat))
 

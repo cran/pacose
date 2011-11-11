@@ -4,7 +4,7 @@
 \description{Determines if a given graph is complete or not.}
 \usage{isComplete(G,set)}
 \arguments{
-  \item{G}{an \code{\link[igraph0:igraph-package]{igraph0}} object.}
+  \item{G}{an \code{\link[igraph:igraph-package]{igraph}} object.}
   \item{set}{vector of the subgraph's nodes.}
 }
 \value{Boolean : TRUE if the (sub)graph is complete, FALSE if not.}

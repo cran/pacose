@@ -10,7 +10,7 @@ ipacose(x = x, pc = pc, method = "pacose.ridge", cutoff, gr=NULL, k = 2, cv.meth
   \item{pc}{a first version of the  p x p partial correlation matrix.}
   \item{method}{should be "pacose.pls", "pacose.ridge" or "pacose.adalasso".}
   \item{cutoff}{a threshold to apply to the new partial correlation matrices obtained with PACOSE in order to obtain a new version of the graph.}
-  \item{gr}{the true graph (an object of class \code{\link[igraph0:igraph-package]{igraph0}}), when it is known. It must be set to NULL (the default value) when the true graph is not known.}
+  \item{gr}{the true graph (an object of class \code{\link[igraph:igraph-package]{igraph}}), when it is known. It must be set to NULL (the default value) when the true graph is not known.}
   \item{k}{integer, the number of folds to be used when selecting the optimal value for he regularization parameter.}
   \item{adaptive}{boolean, default to FALSE.} 
   \item{cv.method}{only valid when the reference method is \code{ridge.net}: determines the way the ridge parameter is computed ("HKB" or "CV", see \link{pacose.ridge}).  }
@@ -26,7 +26,7 @@ ipacose(x = x, pc = pc, method = "pacose.ridge", cutoff, gr=NULL, k = 2, cv.meth
 \author{Vincent Guillemot}
 \examples{
 require(mvtnorm)
-require(igraph0)
+require(igraph)
 
 omega <- matrix(c(1     , -0.477, 0.304, 0.478, -0.591, 0    ,
                -0.477, 2     , 0.206, 0    , 0.382 , 0    ,

@@ -1,3 +1,2 @@
-oppdiag <-
-function(mat) {diag(mat) <- -diag(mat) ; -mat}
+oppdiag <- function(mat) {diag(mat) <- -diag(mat) ; -mat}
 
